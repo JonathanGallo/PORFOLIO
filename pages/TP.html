@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TPJS</title>
+</head>
+<body>
+    
+    <h5>Ejercicio eje</h5>
+
+    <label for="eje_n1">Numero 1</label>
+    <input type="number" id="eje_n1">
+
+    <label for="eje_n2">Numero 2</label>
+    <input type="number" id="eje_n2">
+
+    <label for="eje_n3">Numero 3</label>
+    <input type="number" id="eje_n3">
+
+    <button onclick="func_ej()">resultado</button>
+
+    <label for="ej_resul"></label>
+    <input type="text" id="ej_resul">
+
+    <script>
+        function func_ej1(){
+            // alert("me ejecuto dentro de una funcion")
+            let eje_n1 = parseFloat(document.getElementById("eje_n1").value);
+            let eje_n2 = parseFloat(document.getElementById("eje_n2").value);
+            let eje_n3 = parseFloat(document.getElementById("eje_n3").value);
+
+            const suma = eje_n1 + eje_n2 + eje_n3;
+            document.getElementById("ej_resul").value = suma;
+        }
+    </script>
+
+<h5>Ejercicio 1</h5>
+
+<label for="eje1_n1">Numero 1</label>
+<input type="number" id="eje1_n1">
+
+<label for="eje1_n2">Numero 2</label>
+<input type="number" id="eje1_n2">
+
+<label for="eje1_n3">Numero 3</label>
+<input type="number" id="eje1_n3">
+
+<button onclick="func_ej1()">resultado</button>
+
+<label for="ej1_resul"></label>
+<input type="text" id="ej1_resul">
+
+<script>
+    function func_ej1(){
+
+        let eje1_n1 = parseFloat(document.getElementById("eje1_n1").value);
+        let eje1_n2 = parseFloat(document.getElementById("eje1_n2").value);
+        let eje1_n3 = parseFloat(document.getElementById("eje1_n3").value);
+
+        if ((eje_n1>eje_n2)&& (eje_n1>eje_n3)){
+         document.getElementById("eje1_resul").value= "El mayor es el primer numero"}
+         if ((eje_n2>eje_n1)&& (eje_n2>eje_n3)){
+         document.getElementById("eje1_resul").value= "El mayor es el segundo numero"}
+         if ((eje_n3>n2)&& (eje_n3>eje_n1)){
+         document.getElementById("eje1_resul").value= "El mayor es el tercer numero"}
+        
+        }
+    
+         
+</script>
+
+<h5>Ejercicio 2</h5>
+
+<label for="eje2_n1">Numero 1</label>
+<input type="number" id="eje2_n1">
+
+<label for="eje2_n2">Numero 2</label>
+<input type="number" id="eje2_n2">
+
+<button onclick="func_ej2()">resultado</button>
+
+<label for="ej2_resul"></label>
+<input type="text" id="ej2_resul">
+
+<script>
+    function func_ej2(){
+        
+        let eje2_n1 = parseFloat(document.getElementById("eje2_n1").value);
+        let eje2_n2 = parseFloat(document.getElementById("eje2_n2").value);
+        
+        const suma = eje2_n1 + eje2_n2;
+        document.getElementById("ej2_resul").value = suma;
+    }
+</script>
+
+<h5>Ejercicio 3</h5>
+
+<label for="eje3_p">Palabra</label>
+<input type="text" id="eje3_p">
+
+<label for="eje3_n1">Numero de repeticiones</label>
+<input type="number" id="eje_n1">
+
+<button onclick="func_ej3()">resultado</button>
+
+<label for="ej3_resul"></label>
+<input type="text" id="ej3_resul">
+
+<script>
+    function func_ej3(){
+        let ej3_resul = 0
+        for (let index = 0; index < 4; index++) {
+            
+            
+        }
+        
+        alert(ej3_resul)
+    
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
