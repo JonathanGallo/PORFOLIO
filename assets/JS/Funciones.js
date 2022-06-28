@@ -109,3 +109,98 @@ function func_eje6() {
 
 //ejercicio 7//
 
+//ejercicio 8//
+
+function func_eje8() {
+        
+    num = document.getElementById("eje8_Numero").value
+    cont = 0
+    texto = "1, "
+
+    if (num == "" || (parseInt(num) > -1 && parseInt(num) < 1)){
+      texto = ""
+    }
+
+    num = parseInt(num)
+    if (num < 0){
+      num = num * -1
+    }
+
+    for (i = 1; i <= num; i++){
+      cont = 0
+        for (x = 1; x <= i / 2; x++){
+            if (i%x == 0){
+             cont++
+            }
+        }
+        if (cont == 1){
+           texto = texto + i + ", "
+        }
+    }
+
+    document.getElementById("num_primos").value = texto.slice(0,-2)
+}
+
+//ejercicio 9//
+
+function func_eje9() {
+    nom = document.getElementById("eje9_nom").value
+    apell = document.getElementById("eje9_apell").value
+    edad = document.getElementById("eje9_edad").value
+    ciudad = document.getElementById("eje9_ciu").value
+
+    if(nom == "" || apell == "" || edad == "" || ciudad == ""){
+      document.getElementById("parraf").innerHTML = "No esta completo"
+    }
+    else{
+      document.getElementById("parraf").innerHTML = "Mi nombre es " + nom + " " + apell + ", tengo " + edad + " años. Nací en la ciudad de " + ciudad + "."
+    }
+
+}
+
+//ejercicio 10//
+
+function func_eje10() {
+    val1 = document.getElementById("eje10_num1").value
+    val2 = document.getElementById("eje10_num2").value
+    document.getElementById("eje10_resultado").value = ""
+    cont = 0
+    texto = ""
+
+    if(val1 != "" && val2 != ""){
+      val1 = parseInt(val1)
+      val2 = parseInt(val2)
+
+        if(val1 == val2){
+          document.getElementById("eje10_resultado").value = "son los mismos numeros."
+        }
+      else{
+        if(val1 < val2){
+            for(i=val1+1; i<=val2-1; i++){
+              texto = texto + i + ", "
+              cont++
+            }
+            if(cont == 0){
+              document.getElementById("eje10_resultado").value = "no se puede realizar la operacion"
+            }
+            else{
+              document.getElementById("eje10_resultado").value = texto.slice(0,-2)
+            }
+        }
+        else{
+           for(i=val1-1; i>=val2+1; i--){
+              texto = texto + i + ", "
+              cont++
+            }
+            if(cont== 0){
+              document.getElementById("eje10_resultado").value = "no se puede realizar la operacion"
+            }
+            else{
+              document.getElementById("eje10_resultado").value = texto.slice(0,-2)
+            }
+        }
+      }
+    }
+}
+
+
